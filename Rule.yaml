@@ -1,7 +1,7 @@
 ##############################################################
-###  修订时间：　2022/3/11
-###  修订内容：  排除百度网盘
-###  修订原因：  懂得都懂
+###  修订时间：　2022/3/27
+###  修订内容：  steam登录端口(steampowered.com)直连使得账号记住密码
+###  修订原因：  不想每次都输验证码
 ##############################################################
 
 # HTTP 端口
@@ -471,7 +471,7 @@ rules:
 - DOMAIN-SUFFIX,sogou.com,DIRECT
 - DOMAIN-SUFFIX,sogoucdn.com,DIRECT
 # > Steam
-#- DOMAIN-SUFFIX,steampowered.com,DIRECT
+- DOMAIN-SUFFIX,steampowered.com,DIRECT
 #- DOMAIN-SUFFIX,steam-chat.com,DIRECT
 #- DOMAIN-SUFFIX,steamgames.com,DIRECT
 #- DOMAIN-SUFFIX,steamusercontent.com,DIRECT
