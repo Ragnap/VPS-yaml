@@ -471,6 +471,8 @@ rules:
 - DOMAIN-SUFFIX,sogou.com,DIRECT
 - DOMAIN-SUFFIX,sogoucdn.com,DIRECT
 # > Steam
+- DOMAIN-SUFFIX,store.steampowered.com,AUTO
+- DOMAIN-SUFFIX,api.steampowered.com,AUTO
 - DOMAIN-SUFFIX,steampowered.com,DIRECT
 #- DOMAIN-SUFFIX,steam-chat.com,DIRECT
 #- DOMAIN-SUFFIX,steamgames.com,DIRECT
