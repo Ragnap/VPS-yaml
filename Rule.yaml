@@ -1,7 +1,7 @@
 ##############################################################
-###  修订时间：　2022/3/27
-###  修订内容：  steam登录端口(steampowered.com)直连使得账号记住密码
-###  修订原因：  不想每次都输验证码
+###  修订时间：　2022/3/28
+###  修订内容：  mumu模拟器(mumu.nie.netease.com)直连
+###  修订原因：  脚本一直在断线
 ##############################################################
 
 # HTTP 端口
@@ -159,6 +159,9 @@ proxy-groups:
 
 # 规则
 rules:
+# mumu模拟器
+- DOMAIN-SUFFIX,mumu.nie.netease.com,DIRECT
+- DOMAIN-SUFFIX,mumu-store-api.webapp.163.com,DIRECT
 # 洛谷
 - DOMAIN-SUFFIX,luogu.com.cn,DIRECT
 # 百度网盘
