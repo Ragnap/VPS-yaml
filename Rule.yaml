@@ -1,7 +1,7 @@
 ##############################################################
-###  修订时间：　2022/3/28
-###  修订内容：  mumu模拟器(mumu.nie.netease.com)直连
-###  修订原因：  脚本一直在断线
+##  修订时间：　2022/3/30
+###  修订内容：  阿里云国内直连
+###  修订原因：  服务器面板等半天受不了了
 ##############################################################
 
 # HTTP 端口
@@ -162,6 +162,8 @@ rules:
 # mumu模拟器
 - DOMAIN-SUFFIX,mumu.nie.netease.com,DIRECT
 - DOMAIN-SUFFIX,mumu-store-api.webapp.163.com,DIRECT
+# 阿里云
+- DOMAIN-SUFFIX,aliyun.com,DIRECT
 # 洛谷
 - DOMAIN-SUFFIX,luogu.com.cn,DIRECT
 # 百度网盘
