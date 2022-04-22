@@ -1,7 +1,7 @@
 ##############################################################
-##  修订时间：　2022/3/30
-###  修订内容：  阿里云国内直连
-###  修订原因：  服务器面板等半天受不了了
+###  修订时间：　2022/4/22
+###  修订内容：  超星直连
+###  修订原因：  傻逼数字逻辑作业
 ##############################################################
 
 # HTTP 端口
@@ -172,6 +172,8 @@ rules:
 - DOMAIN-SUFFIX,neumathe.cn,DIRECT
 # 中国大学MOOC
 - DOMAIN-SUFFIX,icourse163.org,DIRECT
+# 超星
+- DOMAIN-SUFFIX,chaoxing.com,DIRECT
 # 校园网
 - DOMAIN-SUFFIX,edu.cn,DIRECT
 - DOMAIN-SUFFIX,yuketang.cn,DIRECT
