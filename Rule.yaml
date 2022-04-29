@@ -1,7 +1,7 @@
 ##############################################################
 ###  修订时间：　2022/4/29
-###  修订内容：  代理微软商店
-###  修订原因：  有需求就有商店
+###  修订内容：  acwing 直连
+###  修订原因：  acwing 加载太卡了
 ##############################################################
 
 # HTTP 端口
@@ -188,6 +188,8 @@ rules:
 - IP-CIDR,100.64.0.0/10,DIRECT
 # 微软商店
 - DOMAIN-SUFFIX,displaycatalog.mp.microsoft.com,AUTO
+# ACWing
+- DOMAIN-SUFFIX,acwing.com,DIRECT
 
 # Unbreak
 # > Google
