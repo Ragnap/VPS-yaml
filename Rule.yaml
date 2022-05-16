@@ -493,6 +493,8 @@ rules:
 - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,DIRECT
 #- DOMAIN-SUFFIX,steamstat.us,DIRECT
 - DOMAIN-SUFFIX,steampipe.steamcontent.tnkjmec.com,DIRECT
+- DOMAIN-SUFFIX,dl.steam.clngaa.com,DIRECT
+
 # > Tencent
 - DOMAIN-SUFFIX,gtimg.com,DIRECT
 - DOMAIN-SUFFIX,idqqimg.com,DIRECT
