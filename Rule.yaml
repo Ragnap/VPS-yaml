@@ -1,7 +1,7 @@
 ##############################################################
-###  修订时间：　2022/4/29
-###  修订内容：  acwing 直连
-###  修订原因：  acwing 加载太卡了
+###  修订时间：　2022/5/16
+###  修订内容：  steam 下载直连
+###  修订原因：  好像是新的节点？
 ##############################################################
 
 # HTTP 端口
@@ -492,6 +492,7 @@ rules:
 #- DOMAIN-SUFFIX,steamstatic.com,DIRECT
 - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,DIRECT
 #- DOMAIN-SUFFIX,steamstat.us,DIRECT
+- DOMAIN-SUFFIX,steampipe.steamcontent.tnkjmec.com,DIRECT
 # > Tencent
 - DOMAIN-SUFFIX,gtimg.com,DIRECT
 - DOMAIN-SUFFIX,idqqimg.com,DIRECT
