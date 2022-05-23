@@ -98,8 +98,8 @@ proxies:
 - name: "Singapore-ipv4"
   type: vmess
   server: 139.180.140.20
-  port: 4242
-  uuid: 4a7d91f0-913d-4564-bd44-99982c81098d
+  port: 42424
+  uuid: a3d12a2a-d6b3-4248-bb5d-0c5759f9606d
   alterId: 0
   cipher: auto
   # udp: true
