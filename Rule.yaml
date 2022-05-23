@@ -1,7 +1,7 @@
 ##############################################################
-###  修订时间：　2022/5/16
-###  修订内容：  steam 下载直连
-###  修订原因：  好像是新的节点？
+###  修订时间：　2022/5/23
+###  修订内容：  ipv4校外节点
+###  修订原因：  有傻逼回家了我不说是谁
 ##############################################################
 
 # HTTP 端口
@@ -78,7 +78,7 @@ hosts:
 proxies:
 
 # VMess
-- name: "v2ray-Singapore"
+- name: "Singapore-ipv6"
   type: vmess
   server: 2001:19f0:4400:4a1f:5400:03ff:fee0:1da9
   port: 4242
@@ -93,6 +93,24 @@ proxies:
   # ws-path: /path
   # ws-headers: #这一行后面不要写东西
   #   Host: v2ray.com # 填写伪装域名
+
+# VMess
+- name: "Singapore-ipv4"
+  type: vmess
+  server: 139.180.140.20
+  port: 4242
+  uuid: 4a7d91f0-913d-4564-bd44-99982c81098d
+  alterId: 0
+  cipher: auto
+  # udp: true
+  # tls: true
+  # skip-cert-verify: true
+  # tls-hostname: 填写伪装域名
+  # network: ws
+  # ws-path: /path
+  # ws-headers: #这一行后面不要写东西
+  #   Host: v2ray.com # 填写伪装域名
+
 
 # Trojan
 #- name: "trojan"
@@ -146,16 +164,26 @@ proxy-groups:
 #   interval: 300
 
 # 代理节点选择
-- name: "AUTO"
+- name: "校园网环境"
   type: select
   proxies:
-    - "自动选择快速节点"
+#    - "自动选择快速节点"
 #    - "ss"
 #    - "ss-obfs"
 #    - "ss-v2ray"
-    - "v2ray-Singapore"
+     - "Singapore-ipv6"
 #    - "trojan"
 
+# 代理节点选择
+- name: "普通网络环境"
+  type: select
+  proxies:
+#    - "自动选择快速节点"
+#    - "ss"
+#    - "ss-obfs"
+#    - "ss-v2ray"
+     - "Singapore-ipv4"
+#    - "trojan"
 
 # 规则
 rules:
