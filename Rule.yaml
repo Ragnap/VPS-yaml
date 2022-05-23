@@ -142,15 +142,13 @@ proxy-groups:
 #  interval: 300
 
 # fallback 通过指定的 URL 测试并选择可用的节点，当 1 故障不可用时自动切换到 2 以此类推
-  - name: "AUTO"
-    type: fallback
-    proxies:
-      - "Singapore-ipv6"
-      - "Singapore-ipv4"
-#     - "3"
-#     - "4"
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
+- name: "AUTO"
+  type: fallback
+  proxies:
+    - "Singapore-ipv6"
+    - "Singapore-ipv4"
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
 
 # load-balance: 负载均衡
 # - name: "LoadBalance"
@@ -167,23 +165,13 @@ proxy-groups:
 - name: "校园网环境"
   type: select
   proxies:
-#    - "自动选择快速节点"
-#    - "ss"
-#    - "ss-obfs"
-#    - "ss-v2ray"
-     - "Singapore-ipv6"
-#    - "trojan"
+    - "Singapore-ipv6"
 
 # 代理节点选择
 - name: "普通网络环境"
   type: select
   proxies:
-#    - "自动选择快速节点"
-#    - "ss"
-#    - "ss-obfs"
-#    - "ss-v2ray"
-     - "Singapore-ipv4"
-#    - "trojan"
+    - "Singapore-ipv4"
 
 # 代理节点选择
 #- name: "AUTO"
