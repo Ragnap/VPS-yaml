@@ -130,27 +130,27 @@ proxies:
 proxy-groups:
 
 # url-test 通过指定的 URL 测试并选择延迟最低的节点
-- name: "自动选择快速节点"
-  type: url-test
-  proxies:
+# - name: "自动选择ipv4与ipv6,可能带来ipv6下的流量消耗"
+#  type: url-test
+#  proxies:
 #    - "ss"
 #    - "ss-obfs"
-#    - "ss-v2ray"
-    - "v2ray-Singapore"
+#     - "Singapore-ipv4"
+#     - "Singapore-ipv6"
 #    - "trojan"
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
+#  url: 'http://www.gstatic.com/generate_204'
+#  interval: 300
 
 # fallback 通过指定的 URL 测试并选择可用的节点，当 1 故障不可用时自动切换到 2 以此类推
-# - name: "Fallback"
-#   type: fallback
-#   proxies:
-#     - "1"
-#     - "2"
+  - name: "AUTO"
+    type: fallback
+    proxies:
+      - "Singapore-ipv6"
+      - "Singapore-ipv4"
 #     - "3"
 #     - "4"
-#   url: 'http://www.gstatic.com/generate_204'
-#   interval: 300
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
 
 # load-balance: 负载均衡
 # - name: "LoadBalance"
@@ -183,6 +183,17 @@ proxy-groups:
 #    - "ss-obfs"
 #    - "ss-v2ray"
      - "Singapore-ipv4"
+#    - "trojan"
+
+# 代理节点选择
+#- name: "AUTO"
+#  type: select
+#  proxies:
+#     - "自动选择ipv4与ipv6,可能带来ipv6下的流量消耗"
+#    - "ss"
+#    - "ss-obfs"
+#    - "ss-v2ray"
+#    - "Singapore-ipv4"
 #    - "trojan"
 
 # 规则
