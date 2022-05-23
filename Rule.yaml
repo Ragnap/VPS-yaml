@@ -100,7 +100,7 @@ proxies:
   server: 139.180.140.20
   port: 42424
   uuid: a3d12a2a-d6b3-4248-bb5d-0c5759f9606d
-  alterId: 0
+  alterId: 1
   cipher: auto
   # udp: true
   # tls: true
@@ -186,6 +186,8 @@ proxy-groups:
 
 # 规则
 rules:
+# teamviewer
+- DOMAIN-SUFFIX,teamviewer.com,DIRECT
 # mumu模拟器
 - DOMAIN-SUFFIX,mumu.nie.netease.com,DIRECT
 - DOMAIN-SUFFIX,mumu-store-api.webapp.163.com,DIRECT
