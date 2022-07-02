@@ -182,6 +182,8 @@ proxy-groups:
 
 # 规则
 rules:
+# bilibili
+- DOMAIN-SUFFIX,hdslb.com,Bilibili直播连接方式
 - DOMAIN-SUFFIX,bilibili.com,Bilibili直播连接方式
 # teamviewer
 - DOMAIN-SUFFIX,teamviewer.com,DIRECT
