@@ -182,7 +182,7 @@ proxy-groups:
 
 # 规则
 rules:
-
+- DOMAIN-SUFFIX,bilibili.com,Bilibili直播连接方式
 # teamviewer
 - DOMAIN-SUFFIX,teamviewer.com,DIRECT
 # mumu模拟器
