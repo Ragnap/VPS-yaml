@@ -522,6 +522,7 @@ rules:
 #- DOMAIN-SUFFIX,steamstat.us,DIRECT
 - DOMAIN-SUFFIX,steampipe.steamcontent.tnkjmec.com,DIRECT
 - DOMAIN-SUFFIX,dl.steam.clngaa.com,DIRECT
+- DOMAIN-SUFFIX,pphimalayanrt.com,DIRECT
 
 # > Tencent
 - DOMAIN-SUFFIX,gtimg.com,DIRECT
