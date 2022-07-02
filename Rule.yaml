@@ -1,7 +1,7 @@
 ##############################################################
-###  修订时间：　2022/5/23
-###  修订内容：  ipv4校外节点
-###  修订原因：  有傻逼回家了我不说是谁
+###  修订时间：　2022/7/2
+###  修订内容：  bilibili直播选择
+###  修订原因：  说不定可以vtb出道（
 ##############################################################
 
 # HTTP 端口
@@ -162,16 +162,12 @@ proxy-groups:
 #   interval: 300
 
 # 代理节点选择
-- name: "校园网环境"
+- name: "Bilibili直播连接方式"
   type: select
   proxies:
-    - "Singapore-ipv6"
+    - "AUTO"
+    - "DIRECT"
 
-# 代理节点选择
-- name: "普通网络环境"
-  type: select
-  proxies:
-    - "Singapore-ipv4"
 
 # 代理节点选择
 #- name: "AUTO"
@@ -186,6 +182,7 @@ proxy-groups:
 
 # 规则
 rules:
+
 # teamviewer
 - DOMAIN-SUFFIX,teamviewer.com,DIRECT
 # mumu模拟器
