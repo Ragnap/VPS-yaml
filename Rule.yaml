@@ -1,7 +1,7 @@
 ##############################################################
-###  修订时间：　2022/7/2
-###  修订内容：  bilibili直播选择
-###  修订原因：  说不定可以vtb出道（
+###  修订时间：　2022/7/6
+###  修订内容：  bilibili链接方式Fixed
+###  修订原因：  抄作业都卡的不行
 ##############################################################
 
 # HTTP 端口
@@ -185,6 +185,7 @@ rules:
 # bilibili
 - DOMAIN-SUFFIX,hdslb.com,Bilibili直播连接方式
 - DOMAIN-SUFFIX,bilibili.com,Bilibili直播连接方式
+- DOMAIN-SUFFIX,bilivideo.com,Bilibili直播连接方式
 # teamviewer
 - DOMAIN-SUFFIX,teamviewer.com,DIRECT
 # mumu模拟器
